@@ -1,0 +1,4 @@
+__pycache__/
+.env
+ai_voice_detector.h5
+ai_voice_detector.keras
