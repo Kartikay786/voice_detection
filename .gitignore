@@ -2,3 +2,5 @@ __pycache__/
 .env
 ai_voice_detector.h5
 ai_voice_detector.keras
+base_to.py
+Audio_clips_testing
