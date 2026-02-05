@@ -24,10 +24,10 @@ class VoiceRequest(BaseModel):
 def server():
     return {"message":"server is running"}
 # api endpoint for hackathon
-@app.post("/api/voice-detection")
+@app.post("/voice-detection")
 def voice_detection(
     payload: VoiceRequest,
-    x_api_key: str = Header(None)
+    x_api_key: str = Header(None, alias="x-api-key")   # ← IMPORTANT FIX
 ):
 
     if x_api_key != API_KEY:
