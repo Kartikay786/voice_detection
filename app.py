@@ -19,6 +19,10 @@ class VoiceRequest(BaseModel):
     audioFormat: str
     audioBase64: str
 
+
+@app.get('/')
+def server():
+    return {"message":"server is running"}
 # api endpoint for hackathon
 @app.post("/api/voice-detection")
 def voice_detection(
